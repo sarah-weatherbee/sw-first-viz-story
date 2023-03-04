@@ -11,3 +11,10 @@ By Sarah Weatherbee
 {% block pubdate %}
   <time datetime="2023-03-04" pubdate>Mar. 4, 2023</time>
 {% endblock pubdate %}
+
+
+{% block content %}
+{% for obj in harvard_park_homicides %}
+{{ obj.first_name }} {{ obj.last_name }}<br>
+{% endfor %}
+{% endblock %}
